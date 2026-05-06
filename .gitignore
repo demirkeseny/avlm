@@ -1,0 +1,39 @@
+# Separate git repos (tracked independently)
+Qwen2.5-VL/
+transformers/
+
+# Intermediate training checkpoints (keep only final)
+e2e_sft_post_audio_projection_sft/checkpoint-500/
+e2e_sft_post_audio_projection_sft/checkpoint-1000/
+e2e_sft_post_audio_projection_sft/checkpoint-1500/
+e2e_sft_post_audio_projection_sft/checkpoint-2000/
+e2e_sft_post_audio_projection_sft/checkpoint-2500/
+e2e_sft_post_audio_projection_sft/checkpoint-3000/
+e2e_sft_post_audio_projection_sft/checkpoint-3500/
+
+# Environment
+.env
+.venv/
+
+# macOS
+.DS_Store
+
+# HuggingFace cached artifacts
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Large model artifacts
+*.bin
+*.safetensors
+*.pt
+*.ckpt

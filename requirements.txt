@@ -1,0 +1,27 @@
+
+# Requirements derived from the notebook "finetuning_vlm_for_speech_understanding_trl_original.ipynb"
+# Note: torch/torchvision/torchaudio pins below reference CUDA 12.1 wheels. Adjust or remove the
+# --extra-index-url and the +cu121 suffixes to match your platform (CPU or a different CUDA).
+
+# Use your forks so notebook installs your modified packages
+# -e git+https://github.com/demirkeseny/transformers.git@main#egg=transformers
+trl==0.17.*
+# -e git+https://github.com/demirkeseny/Qwen2.5-VL.git@main#egg=Qwen2.5-VL
+datasets
+bitsandbytes
+peft
+wandb
+accelerate
+matplotlib
+ipython
+librosa
+huggingface_hub
+
+# PyTorch CPU wheels for macOS
+torch==2.4.1
+torchvision==0.19.1
+torchaudio==2.4.1
+
+# Notes:
+# - If you maintain a fork of transformers or qwen-vl-utils, replace the package names above with
+#   the corresponding git+https://... URLs to install from your fork.
